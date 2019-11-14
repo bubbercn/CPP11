@@ -227,7 +227,7 @@ memory released in destructor
 		cout << "print by rvalue reference: " << myString.c_str() << endl;
 	}
 
-第一个PrintReference函数是用const左值引用作为参数，从前面的例子中我们知道它既可以接受左值也可以接受右值。但是当有了第二个PrintReference的用右值引用的重载之后，右值将优先绑定到第二个PrintReference。这点我们可以通过如下代码来验证：
+第一个printReference函数是用const左值引用作为参数，从前面的例子中我们知道它既可以接受左值也可以接受右值。但是当有了第二个printReference的用右值引用的重载之后，右值将优先绑定到第二个PrintReference。这点我们可以通过如下代码来验证：
 
 	int main()
 	{
